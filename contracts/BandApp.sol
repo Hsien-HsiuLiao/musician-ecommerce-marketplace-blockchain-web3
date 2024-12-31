@@ -48,8 +48,9 @@ contract BandApp {
     function addMgr (address bandMgraddress) public {
         require(owner == msg.sender);
         bandMgrs[bandMgrIndex] = bandMgraddress;
-        bandMgrIndex = bandMgrIndex.add(1);
-        //bandMgrIndex++;
+        // .add not available since no longer using SafeMath for uint256
+        //bandMgrIndex = bandMgrIndex.add(1);
+        bandMgrIndex++;
     }
     
     /**
