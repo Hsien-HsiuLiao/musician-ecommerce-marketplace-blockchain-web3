@@ -86,7 +86,13 @@ On the Admin panel of the app, there is an 'Emergency Stop' button. Once this is
 
 
 
+Select the “Add Network” button and you will be greeted with a form requesting for the relevant network details. In order to connect to our local network, we will be using the following:
 
+    Network Name: Hardhat— This is up to you and defines how the network will show up in your network dropdown.
+    New RPC URL: http://127.0.0.1:8545/ — The endpoint returned from running npx hardhat node earlier.
+    Chain ID: 31337 — This is the default chain identifier that is implemented by Hardhat. You can refer to their documentation here.
+    Currency Symbol: HardhatETH — This is up to you and defines the symbol for the local network currency (ie. ETH).
+    
 # Screenshots on how to use the app
 Open browser
 ![Step 1](screenshots/3.png "Open browser")
