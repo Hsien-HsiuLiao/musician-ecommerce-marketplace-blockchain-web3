@@ -1,10 +1,11 @@
-pragma solidity ^0.4.17;
+pragma solidity ^0.8.0;
 
-import "./SafeMath.sol";
+//safemath not neeeded in solidity 0.8.0
+//import "./SafeMath.sol";
 
 /** @title Band Merchandise Web Store Application */
 contract BandApp {
-    using SafeMath for uint256;
+   // using SafeMath for uint256;
 
     mapping (uint => address) public bandMgrs;
     uint public bandMgrIndex = 0;
@@ -56,7 +57,8 @@ contract BandApp {
      * @param _songname The name of the song being added by the band manager
      * @param _price The purchase price of the song in ether
      */
-    function addSong (string _songname, uint  _price) public {
+    // Data location must be "memory" or "calldata" for parameter in function
+    function addSong (string memory _songname, uint  _price) public {
         songs[songIndex] = Song({songname: _songname, price: _price, seller: msg.sender, buyer: 0 });
         songIndex++;
     }
