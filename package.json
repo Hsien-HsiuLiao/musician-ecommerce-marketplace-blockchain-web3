@@ -2,7 +2,7 @@
   "name": "Band-App",
   "version": "1.0.0",
   "description": "",
-  "main": "truffle.js",
+  "main": "hardhat.config.js",
   "directories": {
     "test": "test"
   },
