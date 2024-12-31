@@ -60,7 +60,7 @@ contract BandApp {
      */
     // Data location must be "memory" or "calldata" for parameter in function
     function addSong (string memory _songname, uint  _price) public {
-        songs[songIndex] = Song({songname: _songname, price: _price, seller: msg.sender, buyer: 0 });
+        songs[songIndex] = Song({songname: _songname, price: _price, seller: msg.sender, buyer: address(0x0) });
         songIndex++;
     }
 
@@ -68,7 +68,7 @@ contract BandApp {
      * @dev Function for when a visitor to the app purchases a song, but will not run if the admin pauses the contract in an emergency
      * @param _seller Account address of the band manager who added the song being bought
      */
-    function buySong (address _seller) stopInEmergency public payable {
+    function buySong (address payable _seller) stopInEmergency public payable {
         _seller.transfer(msg.value);
 
     }
