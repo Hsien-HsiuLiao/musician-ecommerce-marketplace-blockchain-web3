@@ -56,13 +56,15 @@ The app should now be running in the browser. The first account is set as the ad
 
 
 ## Testing
-step 1. Make sure local blockchain is running, 
+test template from web3 github, https://github.com/Hsien-HsiuLiao/create-hardhat-web3v4/tree/create-hardhat-web3v1
+~~step 1. Make sure local blockchain is running,~~ 
 
-    $ ganche-cli
+    ~~$ ganche-cli~~
 
 step 2. In the project directory, run in a new terminal window:
 
-    $ truffle test
+    ~~$ truffle test~~
+    npx hardhat test
 
  
 
