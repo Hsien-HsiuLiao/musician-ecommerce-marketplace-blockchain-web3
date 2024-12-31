@@ -46,7 +46,12 @@ In the project directory, run in a separate terminal window:
     npx hardhat compile
 then
 
-    $ truffle migrate
+    ~~$ truffle migrate~~
+    npx hardhat node
+then in another terminal
+    npx hardhat run scripts/deploy.js --network localhost
+
+
 next, to run the app in the browser that has Metamask, type
 
     $ npm run dev
