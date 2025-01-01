@@ -14,15 +14,11 @@ const artifacts = require("../artifacts/contracts/BandApp.sol/BandApp.json");
 async function main() {
 
   console.log('this script is using hardhat-web3');
-  const currentTimestampInSeconds = Math.round(Date.now() / 1000);
-  const unlockTime = currentTimestampInSeconds + 60;
-
-  const lockedAmount = web3.utils.toWei("0.001", 'ether');
 
   const [deployer] = await web3.eth.getAccounts();
   
-  const daoContract = new web3.eth.Contract(artifacts.abi);
-  const rawContract = await daoContract.deploy({
+  const bandAppContract = new web3.eth.Contract(artifacts.abi);
+  const rawContract = await bandAppContract.deploy({
     data: artifacts.bytecode,
     arguments: [],
     //https://ethereum.stackexchange.com/questions/50554/deploying-a-contract-with-web3-js
