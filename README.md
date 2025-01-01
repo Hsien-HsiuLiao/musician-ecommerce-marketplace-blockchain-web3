@@ -9,7 +9,6 @@ Project has been migrated to use HardHat https://hardhat.org/tutorial
 
 ~~truffle.js is specified to use solc version 0.4.24~~
 
-
         
        
 ### Accounts:
@@ -38,6 +37,7 @@ Clone the repository
 To install lite-server and other dependencies, run
 
     $ npm install
+    
 Run a local blockchain
     
    
