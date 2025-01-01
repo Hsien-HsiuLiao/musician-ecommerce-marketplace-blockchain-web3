@@ -1,10 +1,11 @@
-pragma solidity ^0.4.17;
+pragma solidity ^0.8.0;
 
-import "./SafeMath.sol";
+//safemath not neeeded in solidity 0.8.0
+//import "./SafeMath.sol";
 
 /** @title Band Merchandise Web Store Application */
 contract BandApp {
-    using SafeMath for uint256;
+   // using SafeMath for uint256;
 
     mapping (uint => address) public bandMgrs;
     uint public bandMgrIndex = 0;
@@ -47,8 +48,9 @@ contract BandApp {
     function addMgr (address bandMgraddress) public {
         require(owner == msg.sender);
         bandMgrs[bandMgrIndex] = bandMgraddress;
-        bandMgrIndex = bandMgrIndex.add(1);
-        //bandMgrIndex++;
+        // .add not available since no longer using SafeMath for uint256
+        //bandMgrIndex = bandMgrIndex.add(1);
+        bandMgrIndex++;
     }
     
     /**
@@ -56,8 +58,9 @@ contract BandApp {
      * @param _songname The name of the song being added by the band manager
      * @param _price The purchase price of the song in ether
      */
-    function addSong (string _songname, uint  _price) public {
-        songs[songIndex] = Song({songname: _songname, price: _price, seller: msg.sender, buyer: 0 });
+    // Data location must be "memory" or "calldata" for parameter in function
+    function addSong (string memory _songname, uint  _price) public {
+        songs[songIndex] = Song({songname: _songname, price: _price, seller: msg.sender, buyer: address(0x0) });
         songIndex++;
     }
 
@@ -65,7 +68,7 @@ contract BandApp {
      * @dev Function for when a visitor to the app purchases a song, but will not run if the admin pauses the contract in an emergency
      * @param _seller Account address of the band manager who added the song being bought
      */
-    function buySong (address _seller) stopInEmergency public payable {
+    function buySong (address payable _seller) stopInEmergency public payable {
         _seller.transfer(msg.value);
 
     }

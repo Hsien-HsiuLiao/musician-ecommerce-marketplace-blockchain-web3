@@ -1,7 +1,49 @@
-const BandApp = artifacts.require("BandApp");
+//need to install , npm install --save-dev @nomiclabs/hardhat-web3 chai@4.3.6
+//also add require("@nomiclabs/hardhat-web3"); to hardhat.config.js
+// use chai@4.3.6
+require("@nomiclabs/hardhat-web3");
+const { expect } = require("chai");
 
+//first get contract artifact
+//get artifacts object 
+const artifacts = require("../artifacts/contracts/BandApp.sol/BandApp.json");
 
-contract("BandApp", accounts => {
+//const BandApp = artifacts.require("BandApp");
+const BandApp = new web3.eth.Contract(artifacts.abi);
+
+//replace contract keyword with describe
+//contract('SimpleSmartContract', () => {
+
+describe("BandApp tests", accounts => {
+    it('should increase bandMgrIndex by 1 when calling addMgr function', async () => {
+        //get deployer account
+        const [deployer, bandMgrAddress] = await web3.eth.getAccounts();
+    
+        //get pointer to contract instance
+        //const simpleStorage = await SimpleStorage.deployed();
+        const rawContract = await BandApp.deploy({
+                data: artifacts.bytecode,
+                arguments: [],
+            }).send({
+          from: deployer, 
+          gasPrice: '10000000000', gas: 2310334
+         });
+       // await simpleStorage.set('this');
+      // console.log(rawContract.methods.get().call());
+    
+      //https://docs.web3js.org/guides/hardhat_tutorial/#compile-test-and-deploy-the-contract
+      // To change the status of the data we previously saved, we have to access the method container for the function (s) 
+      //we desire and invoke the .send to broadcast our intention to the network , .send({from: deployer}).
+        await rawContract.methods.addMgr(bandMgrAddress);
+    
+       // const result = await simpleStorage.get();
+        const result = await rawContract.methods.bandMgrIndex().call();
+        console.log('result',result);
+    
+        //assert(result, 'this');
+        expect(result).to.equal(1);
+      });
+
     //1. tests counter increase in addMgr functions
     //get value of bandmgrindex
     //call addMgr function
