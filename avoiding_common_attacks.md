@@ -18,3 +18,6 @@ For song input, the type is set to text for song name and number for price on th
 
 ## Security Tools: 
 used https://tool.smartdec.net/ to find vulnerabilities in smart contract
+
+
+https://ethereum-contract-security-techniques-and-tips.readthedocs.io/en/latest/known_attacks/
