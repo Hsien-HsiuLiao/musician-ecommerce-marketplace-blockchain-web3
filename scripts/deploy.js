@@ -16,32 +16,58 @@ async function main() {
   console.log('this script is using hardhat-web3');
 
   const [deployer] = await web3.eth.getAccounts();
-  
+
   const bandAppContract = new web3.eth.Contract(artifacts.abi);
   const rawContract = await bandAppContract.deploy({
     data: artifacts.bytecode,
     arguments: [],
     //https://ethereum.stackexchange.com/questions/50554/deploying-a-contract-with-web3-js
-//https://web3js.readthedocs.io/en/v1.2.0/web3-eth-contract.html
+    //https://web3js.readthedocs.io/en/v1.2.0/web3-eth-contract.html
   }).send({
-    from: deployer, 
+    from: deployer,
     gasPrice: '10000000000', gas: 2310334
-   });
+  });
 
-console.log(`BandApp address: ${rawContract.options.address}`);
+  console.log(`BandApp address: ${rawContract.options.address}`);
 
   const data = {
     //https://web3js.readthedocs.io/en/v1.3.0/web3-eth-contract.html?highlight=address#id16
     address: rawContract.options.address,
     //https://web3js.readthedocs.io/en/v1.3.0/web3-eth-contract.html?highlight=address#options-jsoninterface
-   abi: /* JSON.parse( */rawContract.options.jsonInterface/* .format('json') )*/
- ///abi: JSON.parse(rawContract)
+    abi: /* JSON.parse( */rawContract.options.jsonInterface/* .format('json') )*/
+    ///abi: JSON.parse(rawContract)
   };
 
-  
-  fs.writeFileSync('BandAppweb3.json', JSON.stringify(data)); 
+
+  fs.writeFileSync('BandAppweb3.json', JSON.stringify(data));
 
   console.log(data);
+
+  //https://github.com/NomicFoundation/hardhat-boilerplate/blob/master/scripts/deploy.js
+  //todo
+  // We also save the contract's artifacts and address in the frontend directory
+  //saveFrontendFiles(contract);
+}
+
+function saveFrontendFiles(contract) {
+  const fs = require("fs");
+  const contractsDir = path.join(__dirname, "..", "frontend", "src", "contracts");
+
+  if (!fs.existsSync(contractsDir)) {
+    fs.mkdirSync(contractsDir);
+  }
+
+  fs.writeFileSync(
+    path.join(contractsDir, "contract-address.json"),
+    JSON.stringify({ Token: token.address }, undefined, 2)
+  );
+
+  const TokenArtifact = artifacts.readArtifactSync("Token");
+
+  fs.writeFileSync(
+    path.join(contractsDir, "Token.json"),
+    JSON.stringify(TokenArtifact, null, 2)
+  );
 }
 
 // We recommend this pattern to be able to use async/await everywhere

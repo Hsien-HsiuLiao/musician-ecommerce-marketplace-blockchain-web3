@@ -3,3 +3,6 @@ node_modules
 # Hardhat files
 /cache
 /artifacts
+
+# truffle or lite-server
+/build/contracts
