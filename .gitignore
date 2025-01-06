@@ -4,5 +4,5 @@ node_modules
 /cache
 /artifacts
 
-# truffle or lite-server
+# truffle 
 /build/contracts
