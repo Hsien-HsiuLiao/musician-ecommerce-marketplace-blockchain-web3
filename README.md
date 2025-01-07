@@ -5,10 +5,6 @@ This is a decentralized application where a visitor using a broswer with the Met
 
 Project has been migrated to use HardHat https://hardhat.org/tutorial
 
-~~Note: This project was developed using Truffle v4.1.14 (core: 4.1.14) Solidity v0.4.24 (solc-js)~~
-
-~~truffle.js is specified to use solc version 0.4.24~~
-
         
        
 ### Accounts:
@@ -34,9 +30,9 @@ Select the “Add Network” button and you will be greeted with a form requesti
 
 Clone the repository
 
-To install lite-server and other dependencies, run
+To install ~~lite-server~~ and other dependencies, run in root dir and frontend dir
 
-    $ npm install
+    npm install
     
 Run a local blockchain
     
@@ -49,21 +45,21 @@ Open a browser (Chrome preferred) with the Metamask extension installed
 import account 0 private key from hardhat
 
 In the project directory, run in a separate terminal window: 
-
     
     npx hardhat compile
+
 then
 
-    
     npx hardhat node
+
 then in another terminal
 
     npx hardhat run scripts/deploy.js --network localhost
 
 
-next, to run the app, type
+next, to run the app, cd to frontend dir
 
-    $ npm run dev
+    npm start
 
 The app should now be running in the browser. If not, browse to http://localhost:3000/ The first account is set as the admin account, and you will be able to add a band manager from here. For testing, we will use Account 2 to copy the address and input it as a band manager. After submitting the address, the list of band managers will be updated in the Admin panel. And if you switch to Account 2 in Metamask, you will now see a Band Manager panel. Next add a song by inputting a name and price in ether. (Ex: Thriller, 0.07) Now switch to Account 3 (this will be used as a visitor account with no special priviliges). You will now see the song for sale and you can purchase it by clicking the BUY button. Notice the account balances of Account 2 and 3 before and after purchasing the song. Screenshots on how to setup the app are available at the end.
 
@@ -87,13 +83,6 @@ On the Admin panel of the app, there is an 'Emergency Stop' button. Once this is
 
 ## Common attacks
 [avoiding_common_attacks.md](..//master/avoiding_common_attacks.md)
-
-
-
-
-
-
-
 
 
 ### Future implementations:
@@ -120,5 +109,4 @@ implement multi sig wallet for payments (all or majority of band members agree o
 
 update tests
 
-update front end to react
 
