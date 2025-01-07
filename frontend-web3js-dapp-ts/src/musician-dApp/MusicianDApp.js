@@ -1,9 +1,9 @@
 //import logo from './logo.svg';
-//import './App.css';
-//import Header from './Header.js';
-//import AdminPanel from './AdminPanel.js';
-//import AddSong from './AddSong.js';
-//import SongsForSale from './SongsForSale';
+import './App.css';
+import Header from './Header.js';
+import AdminPanel from './AdminPanel.js';
+import AddSong from './AddSong.js';
+import SongsForSale from './SongsForSale';
 import { useState, useEffect } from 'react';
 import Web3 from 'web3';
 import BandApp from './BandAppweb3.json';
@@ -157,12 +157,12 @@ web3.setProvider('ws://localhost:8546'); */
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-8 col-sm-push-2">
-            {/* <Header accounts={accounts} contractAddress={BandApp.address} owner={admin} /> */}
+            <Header accounts={accounts} contractAddress={BandApp.address} owner={admin} />
 
             {/* <AdminPanel component, this allows admin/owner to add band managers by eth address */}
             {/* and band managers can in turn add band members by eth address */}
             {/* admin panel only visible to admin/owner */}
-            {/* <AdminPanel contract={contract} accounts={accounts} /> */}
+            <AdminPanel contract={contract} accounts={accounts} />
             {/* AdminPanel component />*/}
 
 
@@ -175,12 +175,12 @@ web3.setProvider('ws://localhost:8546'); */
             <div id="bandmgrpanel">add band members
 
             {/* <Add Song component */}
-            {/* <AddSong contract={contract} accounts={accounts} web3={web3}/> */}
+            <AddSong contract={contract} accounts={accounts} web3={web3}/>
               
             {/* Add Song component />*/}
 
             </div>
-            {/* <SongsForSale contract={contract} web3={web3}/> */}
+            <SongsForSale contract={contract} web3={web3}/>
             {/* <!--
                 <div><button onclick="App.buyThisSong()">clickme</button></div>
                 <div><button onclick="App.buyThisSong('test',7000,web3.eth.accounts[0])">buy test</button></div>
