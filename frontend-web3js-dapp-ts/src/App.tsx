@@ -7,6 +7,7 @@ import { type IWeb3Context, Web3Context } from "./web3/Web3Context";
 
 import Accounts from "./Accounts";
 import ProviderButton from "./ProviderButton";
+import MusicianDApp from "./musician-dApp/MusicianDApp";
 
 function App() {
   const web3Context: IWeb3Context = useContext(Web3Context);
@@ -42,6 +43,9 @@ function App() {
 
   return (
     <main>
+      <h1>Musician dApp</h1>
+      <MusicianDApp></MusicianDApp>
+
       <h1>Web3.js + React Demonstration dApp</h1>
       <div>
         This is a sample project that demonstrates using{" "}
