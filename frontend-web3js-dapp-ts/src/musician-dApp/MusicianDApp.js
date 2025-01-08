@@ -6,6 +6,8 @@ import AddSong from './AddSong.js';
 import SongsForSale from './SongsForSale';
 import { useState, useEffect } from 'react';
 import Web3 from 'web3';
+//https://docs.web3js.org/guides/smart_contracts/smart_contracts_guide/#step-4-compile-the-solidity-code-with-the-solidity-compiler-and-get-its-abi-and-bytecode
+//rename BandApp to contractABI?
 import BandApp from '../contracts/MusicianDAppweb3.json';
 
 function MusicianDApp() {
