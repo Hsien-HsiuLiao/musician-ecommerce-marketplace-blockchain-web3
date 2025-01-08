@@ -43,7 +43,7 @@ function App() {
 
   return (
     <main>
-      <h1>Musician dApp</h1>
+      
       <MusicianDApp></MusicianDApp>
 
       <h1>Web3.js + React Demonstration dApp</h1>
