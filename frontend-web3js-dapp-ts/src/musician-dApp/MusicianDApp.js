@@ -6,7 +6,7 @@ import AddSong from './AddSong.js';
 import SongsForSale from './SongsForSale';
 import { useState, useEffect } from 'react';
 import Web3 from 'web3';
-import BandApp from './BandAppweb3.json';
+import BandApp from '../contracts/MusicianDAppweb3.json';
 
 function MusicianDApp() {
   //  https://react.dev/learn/reacting-to-input-with-state#step-2-determine-what-triggers-those-state-changes
