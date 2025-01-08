@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require("path");
 require("@nomiclabs/hardhat-web3");
 
 //https://stackoverflow.com/questions/77071456/typeerror-web3-is-not-a-constructor
@@ -38,8 +39,17 @@ async function main() {
     ///abi: JSON.parse(rawContract)
   };
 
+  const contractsDir = path.join(__dirname, "..", "frontend-web3js-dapp-ts", "src", "contracts");
 
-  fs.writeFileSync('BandAppweb3.json', JSON.stringify(data));
+  if (!fs.existsSync(contractsDir)) {
+    fs.mkdirSync(contractsDir);
+  }
+
+
+  fs.writeFileSync(
+    path.join(contractsDir, "MusicianDAppweb3.json"), 
+    JSON.stringify(data)
+  );
 
   console.log(data);
 

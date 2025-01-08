@@ -4,5 +4,4 @@ node_modules
 /cache
 /artifacts
 
-# truffle 
-/build/contracts
+/frontend-web3js-dapp-ts/src/contracts
