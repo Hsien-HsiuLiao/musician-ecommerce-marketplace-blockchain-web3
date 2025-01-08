@@ -18,6 +18,21 @@ async function main() {
 
   const [deployer] = await web3.eth.getAccounts();
 
+  //https://docs.web3js.org/guides/migration_from_other_libs/#contracts-deployment
+/* const contractObject = new web3.eth.Contract(abi);
+const deployedContract = await contractObject
+	.deploy({
+		data: bytecode,
+		arguments: ['constructor param'],
+	})
+	.send({
+		from: '0x12598d2Fd88B420ED571beFDA8dD112624B5E730',
+		gas: '1000000',
+		// other transaction's params
+	});
+
+console.log('contract address', deployedContract.options.address); */
+
   const bandAppContract = new web3.eth.Contract(artifacts.abi);
   const rawContract = await bandAppContract.deploy({
     data: artifacts.bytecode,
