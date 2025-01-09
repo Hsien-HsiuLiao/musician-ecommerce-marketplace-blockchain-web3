@@ -3,7 +3,7 @@ import './App.css';
 import Header from './Header.js';
 import AdminPanel from './AdminPanel.js';
 import AddSong from './AddSong.js';
-import SongsForSale from './SongsForSale';
+import SongsForSale from './SongsForSale.js';
 import { useState, useEffect } from 'react';
 import Web3 from 'web3';
 import BandApp from './BandAppweb3.json';
