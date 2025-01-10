@@ -129,7 +129,21 @@ web3.setProvider('ws://localhost:8546'); */
    
    }); */
 
+/* https://web3js.readthedocs.io/en/v1.2.0/web3-eth-contract.html
+    web3.eth.Contract
 
+The web3.eth.Contract object makes it easy to interact with smart contracts on the ethereum blockchain. 
+When you create a new contract object you give it the json interface of the respective smart contract and 
+web3 will auto convert all calls into low level ABI calls over RPC for you.
+
+This allows you to interact with smart contracts as if they were JavaScript objects.
+
+To use it standalone:
+new contract
+
+new web3.eth.Contract(jsonInterface[, address][, options])
+
+ */
     const contract = new web3.eth.Contract(
       BandApp.abi,
       BandApp.address
