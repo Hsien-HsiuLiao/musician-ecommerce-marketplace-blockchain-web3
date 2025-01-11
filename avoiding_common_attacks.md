@@ -21,3 +21,14 @@ used https://tool.smartdec.net/ to find vulnerabilities in smart contract
 
 
 https://ethereum-contract-security-techniques-and-tips.readthedocs.io/en/latest/known_attacks/
+
+Smart contract security topics
+- Confidentiality/Access Control 
+- Safe Math
+- Contract Interactions
+- Reentrancy
+- Tx.origin
+- Denial of Service
+- Weak randomness
+- Upgradeable mechanisms
+- Replay attacks
