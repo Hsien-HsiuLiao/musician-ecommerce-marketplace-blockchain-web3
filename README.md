@@ -26,6 +26,8 @@ Select the “Add Network” button and you will be greeted with a form requesti
     Chain ID: 31337 — This is the default chain identifier that is implemented by Hardhat. You can refer to their documentation here.
     Currency Symbol: HardhatETH — This is up to you and defines the symbol for the local network currency (ie. ETH).
 
+https://support.metamask.io/more-web3/learn/what-is-infura-and-why-does-metamask-use-it/
+
 ## How to set up for local development/testing
 
 Clone the repository
