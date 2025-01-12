@@ -32,3 +32,5 @@ module.exports = {
 };
 
 //const infuraKey = "e8746dd884324d37984f917e061064ee";
+
+//can also use alchemy https://docs.alchemy.com/docs/how-to-deploy-a-smart-contract-to-the-sepolia-testnet
