@@ -32,3 +32,8 @@ Smart contract security topics
 - Weak randomness
 - Upgradeable mechanisms
 - Replay attacks
+
+Rust smart contract security
+- https://www.youtube.com/watch?v=XCwLDfw317c
+- https://www.youtube.com/watch?v=8kGrCCQBLwQ
+- NEAR Rust Smart Contract Security course https://www.youtube.com/watch?v=DrRr6nru0no&list=PL7Gwuo_MOL740lhKTvouCJvk4sAyuqZqT
