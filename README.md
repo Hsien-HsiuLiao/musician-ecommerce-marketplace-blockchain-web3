@@ -155,6 +155,12 @@ Ethereum Name Service -   A name registered on the ENS resolves to the contract,
 Oracle
 
 ~~Use UjoMusic API for sample songs for sale https://api.ujomusic.com/api/musicreleases~~ use audius https://docs.audius.org/developers/introduction/overview/
+- https://docs.audius.org/api/
+- https://audius.org/api/
+- https://docs.audius.org/developers/introduction/overview/
+- https://audiusproject.github.io/api-docs/#audius-api-docs
+- https://docs.audius.org/
+- https://blog.audius.co/article/free-audius-music-plug-in-for-unreal-engine-now-available
 
 implement e-commerce https://www.youtube.com/watch?v=wPQ1-33teR4
 
