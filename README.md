@@ -184,3 +184,17 @@ error: Returned values aren't valid, did it run Out of Gas? You might also see t
 - make sure you are using local network for local development
 
 - clear Metamask cache/tab data in Settings->Advanced
+
+# Music on blockchain
+- https://near.org/blog/music-and-blockchain-introducing-the-future-of-sound
+- https://dappradar.com/blog/music-on-blockchain-dappradars-ultimate-guide
+- https://builtin.com/blockchain/blockchain-music-innovation-examples
+- https://www.sound.xyz/
+- https://builtin.com/blockchain/nft-music
+- https://loudwire.com/matt-sorum-to-artists-help-is-on-the-way-with-artbit/
+- https://blog.ujomusic.com/
+- http://myceliaformusic.org/
+- http://www.capitolmusic360.com/2018/06/26/extend-powers-capitol-360-hackathon-at-legendary-recording-studios/
+- https://decrypt.co/99029/yellowheart-is-transforming-how-tickets-are-issued-sold-and-exchanged
+- https://yh.io/
+- 
