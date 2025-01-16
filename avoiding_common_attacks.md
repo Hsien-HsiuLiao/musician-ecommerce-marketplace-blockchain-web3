@@ -18,3 +18,22 @@ For song input, the type is set to text for song name and number for price on th
 
 ## Security Tools: 
 used https://tool.smartdec.net/ to find vulnerabilities in smart contract
+
+
+https://ethereum-contract-security-techniques-and-tips.readthedocs.io/en/latest/known_attacks/
+
+Smart contract security topics
+- Confidentiality/Access Control 
+- Safe Math
+- Contract Interactions
+- Reentrancy
+- Tx.origin
+- Denial of Service
+- Weak randomness
+- Upgradeable mechanisms
+- Replay attacks
+
+Rust smart contract security
+- https://www.youtube.com/watch?v=XCwLDfw317c
+- https://www.youtube.com/watch?v=8kGrCCQBLwQ
+- NEAR Rust Smart Contract Security course https://www.youtube.com/watch?v=DrRr6nru0no&list=PL7Gwuo_MOL740lhKTvouCJvk4sAyuqZqT

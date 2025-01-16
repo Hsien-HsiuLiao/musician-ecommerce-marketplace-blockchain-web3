@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require("path");
 require("@nomiclabs/hardhat-web3");
 
 //https://stackoverflow.com/questions/77071456/typeerror-web3-is-not-a-constructor
@@ -16,6 +17,21 @@ async function main() {
   console.log('this script is using hardhat-web3');
 
   const [deployer] = await web3.eth.getAccounts();
+
+  //https://docs.web3js.org/guides/migration_from_other_libs/#contracts-deployment
+/* const contractObject = new web3.eth.Contract(abi);
+const deployedContract = await contractObject
+	.deploy({
+		data: bytecode,
+		arguments: ['constructor param'],
+	})
+	.send({
+		from: '0x12598d2Fd88B420ED571beFDA8dD112624B5E730',
+		gas: '1000000',
+		// other transaction's params
+	});
+
+console.log('contract address', deployedContract.options.address); */
 
   const bandAppContract = new web3.eth.Contract(artifacts.abi);
   const rawContract = await bandAppContract.deploy({
@@ -38,8 +54,17 @@ async function main() {
     ///abi: JSON.parse(rawContract)
   };
 
+  const contractsDir = path.join(__dirname, "..", "frontend-web3js-dapp-ts", "src", "contracts");
 
-  fs.writeFileSync('BandAppweb3.json', JSON.stringify(data));
+  if (!fs.existsSync(contractsDir)) {
+    fs.mkdirSync(contractsDir);
+  }
+
+
+  fs.writeFileSync(
+    path.join(contractsDir, "MusicianDAppweb3.json"), 
+    JSON.stringify(data)
+  );
 
   console.log(data);
 
