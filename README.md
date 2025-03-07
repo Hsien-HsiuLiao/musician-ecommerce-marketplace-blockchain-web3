@@ -196,19 +196,10 @@ implement multi sig wallet for payments (all or majority of band members agree o
 update tests
 
 
-# Troubleshooting
+# Events
 
-error: Received invalid block tag 3. Latest block number is 1
-
-https://stackoverflow.com/questions/75125299/how-to-stop-a-hardhat-node-running-on-localhost
-
-close vscode terminal that was running hardhat node to ensure process is stopped
-
-error: Returned values aren't valid, did it run Out of Gas? You might also see this error if you are not using the correct ABI for the contract you are retrieving data from, requesting data from a block number that does not exist, or querying a node which is not fully synced.
-
-- make sure you are using local network for local development
-
-- clear Metamask cache/tab data in Settings->Advanced
+- attended Capitol Royale 2018, 2019
+- attended A3E workshops on blockchain and music industry 2019 https://a3exchange.info/anaheim_2019.html
 
 # Music on blockchain
 - https://near.org/blog/music-and-blockchain-introducing-the-future-of-sound
