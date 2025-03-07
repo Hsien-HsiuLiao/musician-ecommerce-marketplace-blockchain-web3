@@ -20,7 +20,10 @@ Challenges and Considerations
 
 While the potential benefits of blockchain for musicians are significant, there are also challenges to consider. The technology is still relatively new, and many artists may lack the technical knowledge to navigate it effectively. Additionally, the environmental impact of blockchain, particularly in terms of energy consumption, raises concerns that need to be addressed. As the industry evolves, it will be crucial to find sustainable solutions that balance innovation with responsibility.
 
-## Final project for the ConsenSys Developer Program
+## ConsenSys Developer Program
+I researched and came across the ConsenSys Developer Program. It was designed to educate and empower developers to build decentralized applications (dApps) on the Ethereum blockchain. ConsenSys, a leading blockchain technology company, aimed to foster a community of skilled developers who could contribute to the growing ecosystem of Ethereum-based projects. I applied and received a scholarship to participate in this program. 
+
+### Final project
 ### Intro
 
 This is a decentralized application where a visitor using a broswer with the MetaMask extension can purchase songs for sale with Ethereum cryptocurrency. The songs are listed for sale by the band manager who manages the artist/songs. The app admin is the only one that can that add band managers via their Ethereum account address. Once added, the band managers can then add songs for sale to the site. Visitors can visit the site and purchase songs in Ether which is sent directly to the band manager who submitted the song.  
