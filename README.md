@@ -1,4 +1,26 @@
-# Final project for the ConsenSys Developer Program
+Inspired by Imogen Heap's innovative project "Mycelia" and Matt Sorum's "Artbit" in 2018, I began to delve into the potential of blockchain technology to revolutionize the music industry. Both of these initiatives highlight the need for a more equitable and transparent system for artists, and blockchain offers a promising solution.
+
+Decentralization and Ownership
+
+At the core of blockchain technology is decentralization, which empowers musicians by allowing them to maintain ownership of their work. Traditionally, artists often find themselves at the mercy of record labels and streaming platforms that control distribution and revenue. With blockchain, musicians can directly manage their intellectual property, ensuring they receive fair compensation for their creations. Smart contracts can automate royalty payments, ensuring that artists are paid immediately and transparently whenever their music is streamed or sold.
+
+Enhanced Transparency
+
+One of the significant challenges in the music industry is the lack of transparency regarding how royalties are calculated and distributed. Blockchain's immutable ledger provides a clear and verifiable record of all transactions, allowing artists to track their earnings and understand how their music is being monetized. This transparency can help build trust between artists and their fans, as listeners can see how their support translates into financial support for the musicians they love.
+
+New Revenue Streams
+
+Blockchain technology also opens up new avenues for revenue generation. For instance, musicians can create and sell non-fungible tokens (NFTs) representing unique pieces of their work, such as exclusive tracks, concert tickets, or even virtual meet-and-greets. This not only provides artists with additional income but also fosters a deeper connection with their audience, as fans can own a piece of the artist's journey.
+
+Community Engagement and Crowdfunding
+
+Platforms built on blockchain can facilitate community engagement and crowdfunding in unprecedented ways. Artists can connect directly with their fans, allowing them to support projects before they are fully realized. This model not only provides financial backing but also creates a sense of community and shared ownership among fans and artists. By involving fans in the creative process, musicians can cultivate a loyal following that feels invested in their success.
+
+Challenges and Considerations
+
+While the potential benefits of blockchain for musicians are significant, there are also challenges to consider. The technology is still relatively new, and many artists may lack the technical knowledge to navigate it effectively. Additionally, the environmental impact of blockchain, particularly in terms of energy consumption, raises concerns that need to be addressed. As the industry evolves, it will be crucial to find sustainable solutions that balance innovation with responsibility.
+
+## Final project for the ConsenSys Developer Program
 ### Intro
 
 This is a decentralized application where a visitor using a broswer with the MetaMask extension can purchase songs for sale with Ethereum cryptocurrency. The songs are listed for sale by the band manager who manages the artist/songs. The app admin is the only one that can that add band managers via their Ethereum account address. Once added, the band managers can then add songs for sale to the site. Visitors can visit the site and purchase songs in Ether which is sent directly to the band manager who submitted the song.  
