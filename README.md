@@ -23,6 +23,21 @@ While the potential benefits of blockchain for musicians are significant, there 
 ## ConsenSys Developer Program
 I researched and came across the ConsenSys Developer Program. It was designed to educate and empower developers to build decentralized applications (dApps) on the Ethereum blockchain. ConsenSys, a leading blockchain technology company, aimed to foster a community of skilled developers who could contribute to the growing ecosystem of Ethereum-based projects. I applied and received a scholarship to participate in this program. 
 
+### Exercises
+https://github.com/Hsien-HsiuLiao/simple-bank-exercise
+
+https://github.com/Hsien-HsiuLiao/event-ticket-exercise
+
+https://github.com/Hsien-HsiuLiao/multisig-wallet-exercise
+
+https://github.com/Hsien-HsiuLiao/proof-of-existence-exercise
+
+https://github.com/Hsien-HsiuLiao/simple-bank-vyper
+
+https://github.com/Hsien-HsiuLiao/supply-chain-exercise
+
+https://github.com/Hsien-HsiuLiao/ethereum-address-generator-js
+
 ### Final project
 ### Intro
 
