@@ -199,7 +199,7 @@ update tests
 # Events
 
 - attended Capitol Royale 2018, 2019
-- attended A3E workshops on blockchain and music industry 2019 https://a3exchange.info/anaheim_2019.html
+- attended A3E workshops on blockchain and music industry 2019 https://a3exchange.info/anaheim_2019.html , 2020 https://a3exchange.info/anaheim_2020.html
 
 # Music on blockchain
 - https://near.org/blog/music-and-blockchain-introducing-the-future-of-sound
